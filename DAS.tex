@@ -1,0 +1,88 @@
+% !TeX spellcheck = en_GB
+\documentclass[a4paper, headings=standardclasses]{scrartcl}
+
+\usepackage{authblk}
+\renewcommand{\Affilfont}{\small}
+\usepackage[style=authoryear, backend=biber, sorting=nyt, useprefix=true]{biblatex}
+\usepackage[autostyle=false, style=english]{csquotes}
+\MakeOuterQuote{"}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage[]{hyperref}
+
+\addbibresource{DAS.bib}
+
+\newenvironment{enh}[1][]{\begin{framed}\noindent\textbf{Enhancement: #1}\par}{\end{framed}}
+
+
+%opening
+\title{Dreaming of Artificial Society}
+\subtitle{Working Notes on an AB-SFC PK Macroeconomic Model}
+\author{Michele Ciruzzi\thanks{mciruzzi@uninsubria.it - https://orcid.org/0000-0003-1485-1204}}
+
+\begin{document}
+	
+	\maketitle
+
+	\tableofcontents
+
+\section{Introduction}
+\subsection{Aims}
+The aim of this model is to highlight the macroeconomic and distributional effects of some welfare policies.  
+The focus will be put in particular on some (recent) policies yet unapplied in real world as Universal Basic Income, Job Guarantee schemes or the presence of only cooperative firms.
+
+\section{General Hypothesis}
+\subsection{Time}
+The simulation's time-span has to be long enough to observe the effects of introducing a policy. But, it is unreasonable to prolong the simulation over 5-10 years after the policy's introduction because, in any real world context, a government will be able to tune or revert the policy afterwards.
+
+Choosing a time-frame of 7 to 15 years (with the policy's introduction after 2 to 5 years), allows simulating the model with a higher frequency to smooth out behaviours: considering 12 months per year and 4 weeks per month, simulating at week-scale require 48 ticks per year, and so 336 to 720 ticks.
+
+\subsection{Sectors}
+The core sector of most SFC models \parencite{nikiforos2017} and a "Financial Intermediaries" sector will be included, mostly to decouple the decision on the amount to be financially invested and the actual choice of investment.
+
+The list is: Households ($\mathrm{H}$), Capital Goods Firms ($\mathrm{F_K}$), Consumption Goods Firms ($\mathrm{F_C}$), Financial Intermediaries ($\mathrm{I}$), Banks ($\mathrm{B}$), Government ($\mathrm{G}$), Central Bank ($\mathrm{C}$).
+	
+\subsection{Real Assets}
+The model will comprise three kind of real assets: Capital Goods ($\mathrm{K}$) and two kind of consumption goods, Essential Goods ($\mathrm{E}$) and Luxury Goods ($\mathrm{L}$).
+
+\subsection{Financial Assets}
+
+
+\section{Matrices}
+
+\section{Sectors}
+\subsection{Households}
+
+
+
+\section{Real Assets}
+\subsection{Essential Goods}
+The exact definition of essential good (and service) it is not easy to be give. An intuition can be provided by the Foundational Economy approach \parencite{arcidiacono2018a}: \begin{quote}
+	The sphere of the foundational was then demarcated by three criteria: these goods and services were necessary to everyday life; were consumed daily by all citizens regardless of income; and were distributed according to population through branches and networks. They were partly non-market, generally sheltered and one way or another politically franchised.
+\end{quote}
+
+Operationally, we can image the essential goods in the model as the ones included in the basket used by national statistics offices to determinate the poverty line. In this sense, it is a set of goods which continuously mutate to adapt to new life needs.
+
+\begin{enh}[Housing]
+	Among essential goods one should require ad hoc modelling: houses. Houses are special for three reasons.
+	
+	First, they are very heterogeneous in prices and quality, and both are strongly related to the position. In other words, including houses requires (quite always) to make the model spatially explicit.
+	
+	Second, the expenses for housing, in form of rent or mortgage, account for a significant part of monthly consumptions for poor individuals (up to one half).
+	
+	Third, real estate properties are an important form of rent extraction and an important tool of investment, and so another important channel of redistribution.
+\end{enh}
+
+\subsection{Luxury Goods}
+Luxury goods are, by exclusion, all the non-essential goods.
+
+\begin{enh}[Diversified Goods]
+	A subsequent version of the model can include different (abstract) goods to be produced and consumed. This will  create two different innovation processes (better technology for existing goods, or technology for new goods) and will account for the empirical fact that higher the income more diversified the consumptions are \parencite[cfr.][§2]{didomenico2022}.
+\end{enh}
+
+\section{Financial Assets}
+	
+	\printbibliography
+	
+\end{document}

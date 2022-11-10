@@ -60,18 +60,18 @@ Financial Intermediaries' Shares ($S$) held by Households.
 \section{Matrices}
 \subsection{Balance Sheet Matrix}
 
-\begin{tabular}{|l|ccccccc|}
+\begin{tabular}{l|ccccccc|r}
 	\toprule
-	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ \\
+	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ & Tot. \\
 	\midrule
-	$D_\mathcal{B}$ & $+D_\mathcal{B}^\mathcal{H}$ & $+D_\mathcal{B}^{\mathcal{F}_C}$ & $+D_\mathcal{B}^{\mathcal{F}_K}$ &  $+D_\mathcal{B}^\mathcal{I}$  &  $-D_\mathcal{B}$ & & \\
-	$D_\mathcal{C}$ & & & & & & & \\
-	$L$ & & & & & & & \\
-	$B$ & & & & & & & \\
-	$E$ & & & & & & & \\
-	$S$ & & & & & & & \\
-	$K$ & & & & & & & \\
-	\bottomrule
+	$D_\mathcal{B}$ & $+D_\mathcal{B}^\mathcal{H}$ & $+D_\mathcal{B}^{\mathcal{F}_C}$ & $+D_\mathcal{B}^{\mathcal{F}_K}$ &  $+D_\mathcal{B}^\mathcal{I}$  &  $-D_\mathcal{B}$ & & & \\
+	$D_\mathcal{C}$ & & & & & $+D_\mathcal{C}^\mathcal{B}$ & $+D_\mathcal{C}^\mathcal{G}$ & $-D_\mathcal{C}$ & \\
+	$L$ & & & & & & & & \\
+	$B$ & & & & & & & & \\
+	$E$ & & & & & & & & \\
+	$S$ & & & & & & & & \\
+	$K$ & & & & & & & & \\
+	\bottomrule& 
 \end{tabular}
 
 \section{Sectors}

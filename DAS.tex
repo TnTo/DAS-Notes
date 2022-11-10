@@ -50,9 +50,10 @@ The list is: Households ($\mathcal{H}$), Capital Goods Firms ($\mathcal{F}_K$), 
 The model will comprise three kind of real assets: Capital Goods ($K$) and Consumption Goods ($C$), each divided in two kinds, Essential Goods ($E$) and Luxury Goods ($L$).
 
 \subsection{Financial Assets}
-The model includes six different financial assets. 
-Bank Deposits ($D^\mathcal{B}$) of Households, Firms and Financial Intermediaries. 
-Central Bank Deposits ($D^\mathcal{C}$) of Banks and the Government. 
+The model includes seven different financial assets. 
+Bank Deposits ($D$) of Households, Firms and Financial Intermediaries. 
+Banks Reserves and Government Account at the Central Bank ($A$), which are not interest-bearing . 
+Central Bank Advances ($A$) to Banks.
 Loans ($L$) issued by the Banks to Households and Firms. Government's Bonds ($B$) hold by Banks, Central Bank and Financial Intermediaries. 
 Firms' and Banks' Equities ($E^\mathcal{F}$, $E^\mathcal{B}$) held by Financial Intermediaries.
 Financial Intermediaries' Shares ($S$) held by Households.
@@ -60,12 +61,13 @@ Financial Intermediaries' Shares ($S$) held by Households.
 \section{Matrices}
 \subsection{Balance Sheet Matrix}
 
-\begin{tabular}{l|ccccccc|r}
+\begin{tabular}{l|ccccccc|l}
 	\toprule
 	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ & Tot. \\
 	\midrule
-	$D^\mathcal{B}$ & $+D^\mathcal{B}_\mathcal{H}$ & $+D^\mathcal{B}_{\mathcal{F}_C}$ & $+D^\mathcal{B}_{\mathcal{F}_K}$ &  $+D^\mathcal{B}_\mathcal{I}$  &  $-D^\mathcal{B}$ & & & 0 \\
-	$D^\mathcal{C}$ & & & & & $+D^\mathcal{C}_\mathcal{B}$ & $+D^\mathcal{C}_\mathcal{G}$ & $-D^\mathcal{C}$ & 0 \\
+	$D$ & $+D_\mathcal{H}$ & $+D_{\mathcal{F}_C}$ & $+D_{\mathcal{F}_K}$ &  $+D_\mathcal{I}$  &  $-D$ & & & 0 \\
+	$R$ & & & & & $+R_\mathcal{B}$ & $+R_\mathcal{G}$ & $-R$ & 0 \\
+	$A$ & & & & & $-A$ &  & $+A$ & 0 \\
 	$L$ & $-L^\mathcal{H}$ & $-L^{\mathcal{F}_C}$ & $-L^{\mathcal{F}_K}$ & & $+L$ & & & 0 \\
 	$B$ & & & & $+B_\mathcal{I}$ & & $-B$ & $+B_\mathcal{C}$ & 0 \\
 	$E$ & & $-p_E E^{\mathcal{F}_C}$ & $-p_E E^{\mathcal{F}_K}$ & $+p_E E$ & $-p_E E^\mathcal{B}$ & & & 0 \\
@@ -81,7 +83,7 @@ $V$ is the Net Worth of the sector.
 
 \subsection{Balance Sheet Matrix}
 
-\begin{tabular}{l|ccccccc|r}
+\begin{tabular}{l|ccccccc|l}
 	\toprule
 	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ & Tot. \\
 	\midrule
@@ -95,8 +97,8 @@ $V$ is the Net Worth of the sector.
 	$E$ Dividends & & $-\Pi^{\mathcal{F}_C}$ & $-\Pi^{\mathcal{F}_K}$ & $+\Pi_\mathcal{I}$ & $-\Pi^\mathcal{B}$ & & & 0 \\
 	$S$ Dividends & $+\Pi_\mathcal{H}$ & & & $-\Pi^\mathcal{I}$ & & & & 0 \\
 	\midrule
-	$D^\mathcal{C}$ Interests & & & & & $-r_{D^\mathcal{C}} D^\mathcal{C}_\mathcal{B}$ & & $+r_{D^\mathcal{C}} D^\mathcal{C}_\mathcal{B}$& 0 \\
-	$D^\mathcal{B}$ Interests &  & & & & & & & 0 \\
+	$A$ Interests & & & & & $-r_{A} A$ & & $+r_{A} A$& 0 \\
+	$D$ Interests &  $+r_D D_\mathcal{H}$ & & & & & & & 0 \\
 	$L$ Interests &  & & &  & & & & 0 \\
 	$B$ Interests & & & & & & & & 0 \\
 	\bottomrule

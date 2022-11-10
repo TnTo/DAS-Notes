@@ -47,7 +47,7 @@ The core sector of most SFC models \parencite{nikiforos2017} and a "Financial In
 The list is: Households ($\mathcal{H}$), Capital Goods Firms ($\mathcal{F}_K$), Consumption Goods Firms ($\mathcal{F}_C$), Financial Intermediaries ($\mathcal{I}$), Banks ($\mathcal{B}$), Government ($\mathcal{G}$), Central Bank ($\mathcal{C}$).
 	
 \subsection{Real Assets}
-The model will comprise three kind of real assets: Capital Goods ($K$) and Consumption Goods ($C$), each divided in two kinds, Essential Goods ($E$) and Luxury Goods ($L$).
+The model will comprise three kind of real assets: Capital Goods ($K$) and Consumption Goods ($C$), each divided in two kinds, Essential Goods ($F$) and Luxury Goods ($L$).
 
 \subsection{Financial Assets}
 The model includes seven different financial assets. 
@@ -97,8 +97,8 @@ $V$ is the Net Worth of the sector.
 	$E$ Dividends & & $-\Pi^{\mathcal{F}_C}$ & $-\Pi^{\mathcal{F}_K}$ & $+\Pi_\mathcal{I}$ & $-\Pi^\mathcal{B}$ & & & 0 \\
 	$S$ Dividends & $+\Pi_\mathcal{H}$ & & & $-\Pi^\mathcal{I}$ & & & & 0 \\
 	\midrule
+	$D$ Interests & $+r_D D_\mathcal{H}$ & $+r_D D_{\mathcal{F}_C}$ & $+r_D D_{\mathcal{F}_K}$ & $+r_D D_\mathcal{I}$ & $-r_D D$ & & & 0 \\
 	$A$ Interests & & & & & $-r_{A} A$ & & $+r_{A} A$& 0 \\
-	$D$ Interests &  $+r_D D_\mathcal{H}$ & & & & & & & 0 \\
 	$L$ Interests &  & & &  & & & & 0 \\
 	$B$ Interests & & & & & & & & 0 \\
 	\bottomrule

@@ -1,7 +1,7 @@
 % !TeX spellcheck = en_GB
 \documentclass[a4paper, headings=standardclasses]{scrartcl}
 
-\usepackage[margin=15mm]{geometry}
+\usepackage[margin=20mm]{geometry}
 \usepackage{authblk}
 \renewcommand{\Affilfont}{\small}
 \usepackage[style=authoryear, backend=biber, sorting=nyt, useprefix=true]{biblatex}
@@ -62,6 +62,7 @@ Financial Intermediaries' Shares ($S$) held by Households.
 \section{Matrices}
 \subsection{Balance Sheet Matrix}
 
+\begin{center}
 \begin{tabular}{l|ccccccc|l}
 	\toprule
 	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ & Tot. \\
@@ -78,12 +79,13 @@ Financial Intermediaries' Shares ($S$) held by Households.
 	Tot. & $+V_\mathcal{H}$ & $+V_{\mathcal{F}_C}$ & $+V_{\mathcal{F}_K}$ & $+V_\mathcal{I}$ & $+V_\mathcal{B}$ & $+V_\mathcal{G}$ & $+V_\mathcal{C}$ & $+p_K K$\\
 	\bottomrule
 \end{tabular}
+\end{center}
 \\ \\ 
 \vspace{1em}
 $V$ is the Net Worth of the sector.
 
 \subsection{Transactions Matrix}
-
+\begin{center}
 \begin{tabular}{l|ccccccc|l}
 	\toprule
 	& $\mathcal{H}$ & $\mathcal{F}_C$ & $\mathcal{F}_K$ & $\mathcal{I}$ & $\mathcal{B}$ & $\mathcal{G}$ & $\mathcal{C}$ & Tot. \\
@@ -104,6 +106,7 @@ $V$ is the Net Worth of the sector.
 	$B$ Interests & & & & $+r_B B_\mathcal{I}$ & & $-r_B B$ & $+r_B B_\mathcal{C}$ & 0 \\
 	\bottomrule
 \end{tabular}
+\end{center}
 \\ \\ 
 \vspace{1em}
 The Consumption Goods bought by the Government are transferred to Households.

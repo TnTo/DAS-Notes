@@ -41,6 +41,12 @@ The simulation's time-span has to be long enough to observe the effects of intro
 Choosing a time-frame of 7 to 15 years (with the policy's introduction after 2 to 5 years), allows simulating the model with a higher frequency to smooth out behaviours: considering 12 months per year and 4 weeks per month, simulating at week-scale require 48 ticks per year, and so 336 to 720 ticks.
 
 \subsection{Close Economy}
+The assumption of a close economy strongly reduce the complexity of the model, but prevent to observe some economic phenomena like an export-led growth (such as Italy or Germany) or the offshoring labour-intensive productions.
+Nevertheless, this is a common hypothesis which will be used also in this model.
+
+\begin{enh}[Multi-Country Model]
+	A compromise for a future development is to model in a AB-SFC setting the main economy of the model while keeping aggregated (SFC only) the other economies.
+\end{enh}
 
 \subsection{Sectors}
 The core sector of most SFC models \parencite{nikiforos2017} and a "Financial Intermediaries" sector will be included.

@@ -117,8 +117,14 @@ $V$ is the Net Worth of the sector.
 \subsection{Households}
 In this model the core agent (consumer, worker, capitalist) represents a household rather than a single individual. This is a very common approximation in economics and I think it is reasonable as long as we are not going into modelling education and care work, where the gender asymmetries become very relevant.
 
+Each agent is characterized by an education level assigned when it enters the simulation replacing a retired agent inheriting their wealth, and gain experience when working in the same sector (Capital/Consumption and Essential/Luxury) without employment gap.
+The education level is assigned with a probability related to the inherited wealth. 
+
 \begin{enh}[Gender, Care work and Feminist Economics]
-	Approximate individuals as household invisibilizes gender differences and the (hidden) work made mostly by women inside the family (childcare, elder-care, housekeeping, ...) 
+	Approximate individuals as household invisibilizes gender differences and the (hidden) work made mostly by women inside the family (childcare, elder-care, housekeeping, ...).
+	Gender is an important factor in creating inequalities: for example unemployment and wages shows a strong gender effect (which in both cases penalizes women).
+	
+	Adding a gender perspective will be an improvement in the model (with relevant policy's implication) and will require to explicitly model education and childcare (which in this first draft is only sketched), the complete life-time of an agent (here reduced to the working age) and family choices (marriage, pregnancy, ...).
 \end{enh}
 
 \subsection{Firms}

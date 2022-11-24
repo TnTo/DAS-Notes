@@ -127,6 +127,12 @@ The education level is assigned with a probability related to the inherited weal
 	Adding a gender perspective will be an improvement in the model (with relevant policy's implication) and will require to explicitly model education and childcare (which in this first draft is only sketched), the complete life-time of an agent (here reduced to the working age) and family choices (marriage, pregnancy, ...).
 \end{enh}
 
+The Households face each time the choice of what and how much to consume. 
+Each Household want to consume an amount of Essential Consumption Goods randomly selected between two given quantity, with mode at the minimum (like a shifted Beta distribution). In the eventuality they are not able to satisfy their consumption desire for Essential Goods, the difference is added (discounted) to the demand of the next time.
+The Demand for Luxury Good is such that it (sub-linearly) increase when the expected income increase and decrease (with a lower rate) when the income decrease. Households are willing to consume out of wealth or to ask for loans in order to satisfy their consumption desires.
+If the expected capital income is sufficient to match desired consumption agents exits from the labour market (or not re-enter it).
+
+Finally, they periodically sample agents similar to them (for sector, education, experience) and if their income is greater than their own they search for better paid job (the market is assumed rigid). 
 
 
 \subsection{Firms}

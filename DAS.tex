@@ -17,7 +17,7 @@
 
 \newenvironment{enh}[1][]{\begin{framed}\noindent\textbf{Enhancement: #1}\par}{\end{framed}}
 
-\newcommand{\todo}[1]{\par \textbf{TODO:} #1}
+\newcommand{\todo}[1]{\par \textbf{ToDo:} #1}
 
 
 %opening
@@ -79,7 +79,7 @@ Financial Intermediaries' Shares ($S$) held by Households.
 	$A$ & & & & & $-A$ &  & $+A$ & 0 \\
 	$L$ & $-L^\mathcal{H}$ & $-L^{\mathcal{F}_C}$ & $-L^{\mathcal{F}_K}$ & & $+L$ & & & 0 \\
 	$B$ & & & & $+B_\mathcal{I}$ & & $-B$ & $+B_\mathcal{C}$ & 0 \\
-	$E$ & & $-p_E E^{\mathcal{F}_C}$ & $-p_E E^{\mathcal{F}_K}$ & $+p_E E$ & $-p_E E^\mathcal{B}$ & & & 0 \\
+	$E$ & & $-p_E E^{\mathcal{F}_C}$ & $-p_E E^{\mathcal{F}_K}$ & $+p_E E_\mathcal{I}$ & $-p_E E^\mathcal{B}$ & $+p_E E_\mathcal{G}$ & & 0 \\
 	$S$ & $+p_S S$ & & & $-p_S S$ & & & & 0 \\
 	$K$ & & $+p_K K_{\mathcal{F}_C}$ & $+p_K K_{\mathcal{F}_K}$ & & & $+p_K K_\mathcal{G}$ & & $+p_K K$\\
 	\midrule
@@ -112,7 +112,6 @@ $V$ is the Net Worth of the sector.
 	\bottomrule
 \end{tabular}
 }\\ \\
-The Consumption Goods produced by the Government are sold to Households at a non-market price (eventually 0).
 
 \section{Sectors}
 \subsection{Households}
@@ -128,9 +127,6 @@ The role of Financial Intermediares in the model is only to decouple the decisio
 
 \subsection{Central Bank}
 In the model the role of Central Bank is to fix the Government's Bonds interest rate $r_B$ and the Advances interest rate $r_A$.
-
-\todo{${r_B}_t = ???$}
-\todo{${r_A}_t = ???$}
 
 Additionally, it passively buys and sells Government's Bonds on request and guarantees all the Advances needed by banks.
 

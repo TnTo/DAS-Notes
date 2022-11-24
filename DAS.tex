@@ -17,6 +17,8 @@
 
 \newenvironment{enh}[1][]{\begin{framed}\noindent\textbf{Enhancement: #1}\par}{\end{framed}}
 
+\newcommand{\todo}[1]{\begin{framed}\noindent\textbf{TODO:} #1\end{framed}}
+
 
 %opening
 \title{Dreaming of Artificial Society}
@@ -59,7 +61,7 @@ The model comprises three kind of real assets: Capital Goods ($K$) and Consumpti
 \subsection{Financial Assets}
 The model includes seven different financial assets. 
 Bank Deposits ($D$) of Households, Firms and Financial Intermediaries. 
-Banks Reserves and Government Account at the Central Bank ($A$), which are not interest-bearing . 
+Banks Reserves and Government Account at the Central Bank ($A$), which are not interest-bearing. 
 Central Bank Advances ($A$) to Banks.
 Loans ($L$) issued by the Banks to Households and Firms. Government's Bonds ($B$) hold by Banks, Central Bank and Financial Intermediaries. 
 Firms' and Banks' Equities ($E^\mathcal{F}$, $E^\mathcal{B}$) held by Financial Intermediaries.
@@ -115,8 +117,23 @@ The Consumption Goods produced by the Government are sold to Households at a non
 \section{Sectors}
 \subsection{Households}
 
+\subsection{Firms}
+
 \subsection{Financial Intermediaries}
 The role of Financial Intermediares in the model is only to decouple the decision, made by the Households, on the amount to be financially invested and the actual choice of investment.
+
+\subsection{Banks}
+
+\subsection{Government}
+
+\subsection{Central Bank}
+In the model the role of Central Bank is to fix the Government's Bonds interest rate $r_B$ and the Advances interest rate $r_A$.
+
+\todo{$r_B_t = ???$}
+
+Additionally, it passively buys and sells Government's Bonds on request and guarantees all the Advances needed by banks.
+
+In other words, the Central Bank is a lender of last resort for the Government, which then has no accounting limits to spending, and prevent any speculative attacks on debt.
 
 \section{Real Assets}
 \subsection{Essential Goods}
@@ -143,7 +160,21 @@ Luxury goods are, by exclusion, all the non-essential goods.
 	A subsequent version of the model can include different (abstract) goods to be produced and consumed. This will  create two different innovation processes (better technology for existing goods, or technology for new goods) and will account for the empirical fact that higher the income more diversified the consumptions are \parencite[cfr.][§2]{didomenico2022}.
 \end{enh}
 
+\subsection{Capital Goods}
+
 \section{Financial Assets}
+
+\subsection{Advances}
+
+\subsection{Loans}
+
+\subsection{Bonds}
+Bonds are sold and bought at their nominal value and last a single period. Bonds hold by Central Bank are automatically renewed.
+
+\subsection{Equities}
+
+\subsection{Shares}
+Financial Intermediaries' Shares are unlimited in number and re-bought by the Financial Intermediaries at their nominal value on request.
 	
 	\printbibliography
 	

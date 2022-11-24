@@ -115,6 +115,11 @@ $V$ is the Net Worth of the sector.
 
 \section{Sectors}
 \subsection{Households}
+In this model the core agent (consumer, worker, capitalist) represents a household rather than a single individual. This is a very common approximation in economics and I think it is reasonable as long as we are not going into modelling education and care work, where the gender asymmetries become very relevant.
+
+\begin{enh}[Gender, Care work and Feminist Economics]
+	Approximate individuals as household invisibilizes gender differences and the (hidden) work made mostly by women inside the family (childcare, elder-care, housekeeping, \ell) 
+\end{enh}
 
 \subsection{Firms}
 Firms are characterized by their position in the supply chain (either Capital or Consumption), the supply chain in which they are insert (either Essential or Luxury) and the holder of their equities (either Government or Financial Intermediaries).
@@ -144,9 +149,9 @@ The role of Financial Intermediares in the model is only to decouple the decisio
 Banks fixes the interest rates on Deposits, different for each Bank but equal for each account holder.
 Additionally, they chose when granting loans to other sectors (based on the balance sheet of the applicant) and fix a different interest rate for each loan.
 
-Liquidity is obtained, in case of necessity, from Advances which are always granted by the Central Bank.
+Liquidity is obtained, in case of necessity, by selling Government's Bonds or acquiring Advances, which are always granted by the Central Bank.
 
-Banks are required to maintain at least a given liability ($D+A$) over reserves ($R$) ratio.
+Banks are required to maintain at least a given liability ($D+A$) over liquidity ($R+B$) ratio.
 
 \subsection{Government}
 Government fixes the fiscal policies, by adjusting tax rates. It determines the amount to be transfer to Households (both as monetary and non-monetary - i.e. Consumption Goods -) and the production target for Public Sector Firms.

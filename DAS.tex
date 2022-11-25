@@ -12,12 +12,20 @@
 \usepackage{framed}
 \usepackage[hidelinks]{hyperref}
 \usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{cleveref}
 
 \addbibresource{DAS.bib}
 
 \newenvironment{enh}[1][]{\begin{framed}\noindent\textbf{Enhancement: #1}\par}{\end{framed}}
 
 \newcommand{\todo}[1]{\par \textbf{ToDo:} #1}
+
+\newlist{steps}{enumerate}{10}
+\setlist[steps]{label*=\arabic*}
+
+\crefname{stepsi}{step}{steps}
+\Crefname{stepsi}{Step}{Steps}
 
 
 %opening
@@ -222,6 +230,12 @@ Bonds are sold and bought at their nominal value and do not expire. Central Bank
 Financial Intermediaries' Shares are unlimited in number and re-bought by the Financial Intermediaries at their nominal value on request.
 
 \section{Model steps}
+\begin{steps}
+	\item Every Q times, Central Bank updates interest rates [$\mathcal{C}$]
+	\item Households set demand for Consumption Goods [$\mathcal{H}$]
+	\item Government set target output for Public Sector Consumption Firms  [$\mathcal{G}$]
+	
+\end{steps}
 
 \section{Equations}
 

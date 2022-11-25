@@ -22,10 +22,11 @@
 \newcommand{\todo}[1]{\par \textbf{ToDo:} #1}
 
 \newlist{steps}{enumerate}{10}
-\setlist[steps]{label*=\arabic*}
 
 \crefname{stepsi}{step}{steps}
 \Crefname{stepsi}{Step}{Steps}
+
+\newcommand{\litem}[1]{\item[#1] \label{#1}}
 
 
 %opening
@@ -231,7 +232,7 @@ Financial Intermediaries' Shares are unlimited in number and re-bought by the Fi
 
 \section{Model steps}
 \begin{steps}
-	\item[C1] \label{C1} Every Q times, Central Bank updates interest rates []
+	\litem{C1} Every Q times, Central Bank updates interest rates []
 	\item \label{G1} Every T times, Government update tax policies []
 	\item \label{I1} Financial Intermediaries set target interest rate [\cref{C1}]
 	\item \label{G2} Government set target output for Public Sector Consumption Firms []

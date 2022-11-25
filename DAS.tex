@@ -234,11 +234,13 @@ Financial Intermediaries' Shares are unlimited in number and re-bought by the Fi
 	\item \label{C1} Every Q times, Central Bank updates interest rates []
 	\item \label{G1} Every T times, Government update tax policies []
 	\item \label{G2} Government set target output for Public Sector Consumption Firms []
-	\item \label{F1} Consumption Firms set desired output, acquire Loans from Banks [\cref{C1}]
-	\item \label{F2} Consumption Firms open job vacancies, order Capital goods to Capital Firms [\cref{G2,F1}]
-	\item \label{F3} Capital Firms set desired output, acquire Loans from Banks [\cref{C1,F2}]
-	\item \label{F4} Capital Firms open job vacancies [\cref{F3}]
-	\item \label{H1} Households set demand for Consumption Goods [\cref{C1,F2,F4}]
+	\item \label{F1} Consumption Firms set desired output, acquire Loans from Banks [\ref{C1}]
+	\item \label{F2} Consumption Firms open job vacancies, order Capital goods to Capital Firms [\ref{G2,F1}]
+	\item \label{F3} Capital Firms set desired output, acquire Loans from Banks [\ref{C1,F2}]
+	\item \label{F4} Capital Firms open job vacancies [\ref{F3}]
+	\item \label{H1} Households chose if enter or exit job market []
+	\item \label{F5} Firms hire [\ref{F2,F4,H1}]
+	\item \label{H2} Households set demand for Consumption Goods [\ref{C1,F2,F4}]
 	
 \end{steps}
 

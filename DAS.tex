@@ -26,7 +26,7 @@
 \crefname{stepsi}{step}{steps}
 \Crefname{stepsi}{Step}{Steps}
 
-\newcommand{\litem}[1]{\item[#1] \label{#1}}
+\newcommand{\litem}[1]{\item[#1] \label#1}
 
 
 %opening
@@ -238,14 +238,13 @@ Financial Intermediaries' Shares are unlimited in number and re-bought by the Fi
 	\litem{G2} Government set target output for Public Sector Consumption Firms []
 	\litem{F1} Consumption Firms set desired output and order Capital goods to Capital Firms [\cref{G2}]
 	\litem{F2} Capital Firms set desired output [\cref{C1,F1}]
-	\litem{I2} Financial Intermediaries put sell and buy order on Equities' market, Firms emit new equities [\cref{I1,F1,F2}]
-	\litem{F3} Firms acquire Loans from Banks [\cref{I2}]
-	\litem{F4} Firms open job vacancies [\cref{F3}]
+	\litem{F3-I2} Financial Intermediaries put sell and buy order on Equities' market, Firms emit new equities [\cref{I1,F1,F2}]
+	\litem{F4} Firms acquire Loans from Banks [\cref{F3-I2}]
+	\litem{F5} Firms open job vacancies [\cref{F3}]
 	\litem{H1} Households chose if enter or exit job market []
-	\litem{F5} Firms hire [\cref{F4,H1}]
+	\litem{F6} Firms hire [\cref{F4,H1}]
 	\litem{H2} Households set demand for Consumption Goods and Financial Intermediaries' Shares [\cref{F5,I1}]
 	\litem{F6} Wages are paid [\cref{F5}]
-	
 	
 \end{steps}
 
